@@ -7,9 +7,8 @@ def main():
 
     """ call get form fucntion of TFR and store the json data """
 
-    jsonData=tfr.get_form(sys.argv[1])
-
-    tfr.get_data(sys.argv[1],jsonData[0]['id'])
+    formId=tfr.get_form(sys.argv[1])
+    tfr.get_data(sys.argv[1],formId[0]['id'])
 
 
 
